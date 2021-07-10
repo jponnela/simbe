@@ -43,7 +43,7 @@ Syntax for Simbe:
 - Insert figure; specify relative width; add caption (optional)
   ```
   ---
-  my_figure.pdf, 0.4
+  my-figure.pdf, 0.4
   -This is the caption, which uses the same syntax as Simbe bullets.
   ---
   ```
@@ -55,6 +55,6 @@ Syntax for Simbe:
   ```
 - Insert syntax highlighted code segment from file
   ```
-  -----my_code.py-----
+  -----my-code.py-----
   ```
 
