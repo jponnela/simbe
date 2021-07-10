@@ -7,20 +7,40 @@ Simbe is a very simple LaTeX preprocessor. The name is short for Simple LaTeX Be
 The syntax and functionality of Simbe are by design extremely simple. Operators start in the leftmost position in the source file; the only exception is nested bullets, which are created by hitting tab (once or more) and then inserting the bullet operator. With the exception of slide creation, all operators consist of two or more dashes. As a useful mnemonic, the number of dashes corresponds to the number of characters in eq (show equation in display mode), fig (show figure), code (show syntax highlighted typed code), codes (show syntax highlighted code inserted from a file). If you don't want numbered equations, you can use the `nn` (no number) option below. Inline equations are created with the usual $p=mv$ LaTeX syntax.
 
 Syntax for Simbe:
-- Create a new slide and title <br />
-  `**History of Science` 
-- Insert bullet <br />
-  `-There are some famous equations in science.`
-- Insert numbered equation <br />
-  `--E=mc^2--`
-- Insert non-numbered equation <br />
-  `--E=mc^2--nn`
-- Insert figure and specify relative width and optional caption
-  `---`
-  `xkcd_python.pdf, 0.4`
-  `-This is the caption.`
-  `---`
-
+- Create a new slide and title
+  ```
+  **History of Science
+  ```
+- Insert bullet and indented bullet
+  ```
+  -There are a few famous equations in science.
+    -Some are more famous than others.
+   ```
+- Insert numbered equation
+  ```
+  --E=mc^2--
+  ```
+  ```
+  --
+  E=mc^2
+  --
+  ```
+- Insert non-numbered equation
+  ```
+  --E=mc^2--nn
+  ```
+  ```
+  --
+  E=mc^2
+  --nn
+  ```
+- Insert figure; specify relative width; add caption (optional)
+  ```
+  ---
+  my_figure.pdf, 0.4
+  -This is the caption.
+  ---
+  ```
 
 
 
