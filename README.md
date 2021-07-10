@@ -65,5 +65,5 @@ python simbe.py slides.simbe.tex
 The output you get should be identical to the `slides.tex` in the `output` subfolder of `example`. If you then compile those to PDF, you should get an output that looks like `slides.pdf`, also located in the `output` subfolder.
 
 <p align="left">
-  <img width="264" height="99" src="https://github.com/jponnela/simbe/blob/main/input_output.pdf">
+  <img width="900" src="https://github.com/jponnela/simbe/blob/main/input_output.png">
 </p>
