@@ -57,4 +57,10 @@ Syntax for Simbe:
   ```
   -----my-code.py-----
   ```
+## Example
+To run the example, copy `simbe.py` and `beamber_setup.tex` to the `example` folder. Then execute the following in a terminal:
+```
+python simbe.py slides.simbe.tex
+```
+The output you get should be identical to the `slides.tex` in the `output` subfolder of `example`. If you then compile those to PDF, you should get an output that looks like `slides.pdf`, also located in the `output` subfolder.
 
