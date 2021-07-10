@@ -7,7 +7,7 @@ Simbe is a very simple LaTeX preprocessor written in Python 3. The name is short
 ```
 python simbe.py slides.simbe.tex
 ```
-The output file `slides.tex` will be saved in the same directory.
+The output file `slides.tex` will be saved in the same directory. All properties of your slides (color scheme, font sizes, etc.) are specified in `beamber_setup.tex`. Syntax highlighting is set up for Python, but if you're using a different language, you can modify the setting in that setup file.
 
 ## Syntax
 The syntax and functionality of Simbe are by design extremely simple. Operators start in the **leftmost position** in the source file; the only exception is nested bullets, which are created by hitting tab (once or more) and then inserting the bullet operator. With the exception of the new slide operator, which is the asterisk ('*') and appears on its own, all other operators consist of a pair (begin,end) of two or more dashes. As a useful mnemonic, the number of dashes in the name of the operator corresponds to the number of characters in the following abbreviations: eq (`--`: show equation in display mode), fig (`---`: show figure), code (`----`: show syntax highlighted typed code), codes (`-----`: show syntax highlighted code inserted from a file). If you don't want numbered equations, you can use the `nn` (no number) option below. Inline equations are created with the usual `$p=mv$` LaTeX syntax.
