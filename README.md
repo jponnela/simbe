@@ -55,7 +55,7 @@ Syntax for Simbe:
   ```
 - Insert syntax highlighted code segment from file
   ```
-  -----my-code.py-----
+  -----my_code.py-----
   ```
 ## Example
 To run the example, copy `simbe.py` and `beamber_setup.tex` to the `example` folder. Then execute the following in a terminal:
