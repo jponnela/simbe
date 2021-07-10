@@ -1,0 +1,52 @@
+\input{beamer_setup.tex}
+\title[Simbe]{Introducing Simbe for Technical Slides}
+\subtitle{Simbe}
+\author[JP Onnela]{JP Onnela}
+\date[July 10, 2021]{July 10, 2021}
+\institute[]{Department of Biostatistics \\ Harvard University}
+\frame{\titlepage}
+
+**Introducing Simbe
+-Simbe is an ultralight markup language for math / code heavy slides
+-I wrote it in 2013 when I had to prepare 600+ slides for teaching a new course
+-PowerPoint and Keynote were not feasible options for technical slides
+-LaTeX Beamer has too much markup overhead for simple functionalities
+-Simbe is a very simple LaTeX preprocessor written in Python 3
+-It converts a Simbe file to a standard latex file which is compiled to PDF slides
+-Simbe is short for Simple LaTeX Beamber
+
+**Functionality of Simbe
+-Simbe makes the following LaTeX / Beamer operations easy
+    -Bullets
+    -Equations
+    -Figures
+    -Code with syntax highlighting
+-These cover 99\% of my needs, but it's really just LaTeX, so you can do anything
+-This is a famous equation:
+--
+E=mc^2
+--
+
+**Figures
+-Computers are now used everywhere in science
+---
+my-figure.pdf, 0.7
+-This is a serious computer.
+---
+
+**Code with Syntax Highlighting
+-Python is increasingly used in research settings
+-Check out my HarvardX course ``Using Python for Research''
+-Here's a simple Python program with syntax highlighting:
+----
+from math import pi
+print(pi)
+----
+
+**Code with Syntax Highlighting
+-Some programs are more complicated
+-In some cases it's better to place a program in its own file
+-It's especially heplful if you want to execute code on your slides
+-Here's Python code for generating the Fibonacci sequence
+-----my_code.py-----
+
