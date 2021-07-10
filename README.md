@@ -41,24 +41,14 @@ Syntax for Simbe:
   -This is the caption.
   ---
   ```
-
-
-
-- \verb+---+
-
-- Start and end code segment (code) <br />
-- 
-- \verb+----+
-- Insert code segment from file (codes) <br />
-- 
-- 
-- : \verb+-----filename.py-----+
-
-
-
-
-
-
-
-
+- Insert syntax highlighted code
+  ```
+  ----
+  print("Hello world.")
+  ----
+  ```
+- Insert syntax highlighted code segment from file
+  ```
+  -----my_code.py-----
+  ```
 
