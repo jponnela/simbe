@@ -62,7 +62,7 @@ To run the example, copy `simbe.py` and `beamber_setup.tex` to the `example` fol
 ```
 python simbe.py slides.simbe.tex
 ```
-The output you get should be identical to the `slides.tex` in the `output` subfolder of `example`. If you then compile those to PDF, you should get an output that looks like `slides.pdf`, also located in the `output` subfolder.
+The output you get should be identical to the `slides.tex` in the `output` subfolder of `example`. If you then compile those to PDF, you should get an output that looks like `slides.pdf`, also located in the `output` subfolder. The figure below shows the simbe source file on the left and compiled PDF slides on the right.
 
 <p align="left">
   <img width="900" src="https://github.com/jponnela/simbe/blob/main/input_output.png">
